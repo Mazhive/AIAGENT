@@ -1365,7 +1365,9 @@ CMakeFiles/advanced_snake.dir/src/Snake.cpp.o: /home/ai-agent/ai-werkplaats/src/
   /usr/include/c++/12/bits/stl_function.h \
   /usr/include/c++/12/backward/binders.h \
   /usr/include/c++/12/bits/range_access.h \
-  /usr/include/c++/12/bits/deque.tcc
+  /usr/include/c++/12/bits/deque.tcc \
+  /usr/include/c++/12/cstddef \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h
 
 CMakeFiles/advanced_snake.dir/src/main.cpp.o: /home/ai-agent/ai-werkplaats/src/main.cpp \
   /usr/include/stdc-predef.h \
@@ -2173,6 +2175,8 @@ CMakeFiles/advanced_snake.dir/src/main.cpp.o: /home/ai-agent/ai-werkplaats/src/m
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/c++/12/cstddef:
 
 /usr/include/c++/12/cerrno:
 

@@ -181,6 +181,20 @@ CMakeFiles/advanced_snake.dir/src/HighScoreStore.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/advanced_snake.dir/src/HighScoreStore.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ai-agent/ai-werkplaats/src/HighScoreStore.cpp -o CMakeFiles/advanced_snake.dir/src/HighScoreStore.cpp.s
 
+CMakeFiles/advanced_snake.dir/src/Audio.cpp.o: CMakeFiles/advanced_snake.dir/flags.make
+CMakeFiles/advanced_snake.dir/src/Audio.cpp.o: /home/ai-agent/ai-werkplaats/src/Audio.cpp
+CMakeFiles/advanced_snake.dir/src/Audio.cpp.o: CMakeFiles/advanced_snake.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ai-agent/ai-werkplaats/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/advanced_snake.dir/src/Audio.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/advanced_snake.dir/src/Audio.cpp.o -MF CMakeFiles/advanced_snake.dir/src/Audio.cpp.o.d -o CMakeFiles/advanced_snake.dir/src/Audio.cpp.o -c /home/ai-agent/ai-werkplaats/src/Audio.cpp
+
+CMakeFiles/advanced_snake.dir/src/Audio.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/advanced_snake.dir/src/Audio.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ai-agent/ai-werkplaats/src/Audio.cpp > CMakeFiles/advanced_snake.dir/src/Audio.cpp.i
+
+CMakeFiles/advanced_snake.dir/src/Audio.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/advanced_snake.dir/src/Audio.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ai-agent/ai-werkplaats/src/Audio.cpp -o CMakeFiles/advanced_snake.dir/src/Audio.cpp.s
+
 # Object files for target advanced_snake
 advanced_snake_OBJECTS = \
 "CMakeFiles/advanced_snake.dir/src/main.cpp.o" \
@@ -190,7 +204,8 @@ advanced_snake_OBJECTS = \
 "CMakeFiles/advanced_snake.dir/src/Hud.cpp.o" \
 "CMakeFiles/advanced_snake.dir/src/Random.cpp.o" \
 "CMakeFiles/advanced_snake.dir/src/Button.cpp.o" \
-"CMakeFiles/advanced_snake.dir/src/HighScoreStore.cpp.o"
+"CMakeFiles/advanced_snake.dir/src/HighScoreStore.cpp.o" \
+"CMakeFiles/advanced_snake.dir/src/Audio.cpp.o"
 
 # External object files for target advanced_snake
 advanced_snake_EXTERNAL_OBJECTS =
@@ -203,12 +218,14 @@ advanced_snake: CMakeFiles/advanced_snake.dir/src/Hud.cpp.o
 advanced_snake: CMakeFiles/advanced_snake.dir/src/Random.cpp.o
 advanced_snake: CMakeFiles/advanced_snake.dir/src/Button.cpp.o
 advanced_snake: CMakeFiles/advanced_snake.dir/src/HighScoreStore.cpp.o
+advanced_snake: CMakeFiles/advanced_snake.dir/src/Audio.cpp.o
 advanced_snake: CMakeFiles/advanced_snake.dir/build.make
 advanced_snake: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 advanced_snake: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
+advanced_snake: /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1
 advanced_snake: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 advanced_snake: CMakeFiles/advanced_snake.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ai-agent/ai-werkplaats/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable advanced_snake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ai-agent/ai-werkplaats/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable advanced_snake"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/advanced_snake.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Copying assets to output directory"
 	/usr/bin/cmake -E make_directory /home/ai-agent/ai-werkplaats/build/assets

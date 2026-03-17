@@ -129,6 +129,30 @@ advanced_snake/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/advanced_snake.dir/build.make CMakeFiles/advanced_snake.dir/build
 .PHONY : advanced_snake/fast
 
+src/Audio.o: src/Audio.cpp.o
+.PHONY : src/Audio.o
+
+# target to build an object file
+src/Audio.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/advanced_snake.dir/build.make CMakeFiles/advanced_snake.dir/src/Audio.cpp.o
+.PHONY : src/Audio.cpp.o
+
+src/Audio.i: src/Audio.cpp.i
+.PHONY : src/Audio.i
+
+# target to preprocess a source file
+src/Audio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/advanced_snake.dir/build.make CMakeFiles/advanced_snake.dir/src/Audio.cpp.i
+.PHONY : src/Audio.cpp.i
+
+src/Audio.s: src/Audio.cpp.s
+.PHONY : src/Audio.s
+
+# target to generate assembly for a file
+src/Audio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/advanced_snake.dir/build.make CMakeFiles/advanced_snake.dir/src/Audio.cpp.s
+.PHONY : src/Audio.cpp.s
+
 src/Button.o: src/Button.cpp.o
 .PHONY : src/Button.o
 
@@ -330,6 +354,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... advanced_snake"
+	@echo "... src/Audio.o"
+	@echo "... src/Audio.i"
+	@echo "... src/Audio.s"
 	@echo "... src/Button.o"
 	@echo "... src/Button.i"
 	@echo "... src/Button.s"

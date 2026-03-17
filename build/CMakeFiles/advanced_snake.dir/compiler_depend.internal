@@ -1373,6 +1373,8 @@ CMakeFiles/advanced_snake.dir/src/Snake.cpp.o
  /usr/include/c++/12/backward/binders.h
  /usr/include/c++/12/bits/range_access.h
  /usr/include/c++/12/bits/deque.tcc
+ /usr/include/c++/12/cstddef
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h
 
 CMakeFiles/advanced_snake.dir/src/main.cpp.o
  /home/ai-agent/ai-werkplaats/src/main.cpp

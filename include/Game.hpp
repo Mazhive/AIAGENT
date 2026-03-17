@@ -2,6 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 
+#include "Audio.hpp"
 #include "Button.hpp"
 #include "Food.hpp"
 #include "HighScoreStore.hpp"
@@ -50,6 +51,7 @@ private:
   sf::RenderWindow m_window;
   sf::RectangleShape m_background;
 
+  Audio m_audio;
   Random m_rng;
   Snake m_snake;
   Food m_normalFood;

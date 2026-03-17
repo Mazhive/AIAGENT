@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/advanced_snake.dir/src/Audio.cpp.o"
+  "CMakeFiles/advanced_snake.dir/src/Audio.cpp.o.d"
   "CMakeFiles/advanced_snake.dir/src/Button.cpp.o"
   "CMakeFiles/advanced_snake.dir/src/Button.cpp.o.d"
   "CMakeFiles/advanced_snake.dir/src/Food.cpp.o"

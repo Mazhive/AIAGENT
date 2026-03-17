@@ -4,6 +4,7 @@
 
 #include <algorithm>
 #include <cmath>
+#include <cstddef>
 
 namespace {
 sf::Color lerpColor(const sf::Color& a, const sf::Color& b, float t) {
@@ -29,6 +30,7 @@ bool Game::init() {
   if (!m_hud.load()) return false;
 
   (void)m_hiscore.load();
+  (void)m_audio.init();
 
   m_background.setSize(
       sf::Vector2f(static_cast<float>(cfg::WindowWidth), static_cast<float>(cfg::WindowHeight)));
@@ -148,6 +150,7 @@ void Game::startExplosion(sf::Vector2f centerPx) {
   m_explosionTtlSec = cfg::ExplosionDurationSec;
   m_moveAccumulator = 0.0f;
   m_pendingGameOver = true;
+  m_audio.playExplosion();
 
   m_particles.clear();
   m_particles.reserve(56);
@@ -209,6 +212,13 @@ void Game::processEvents() {
         }
 
         if (isDirKey) {
+          switch (requested) {
+            case Snake::Dir::Up: m_audio.playDirUp(); break;
+            case Snake::Dir::Down: m_audio.playDirDown(); break;
+            case Snake::Dir::Left: m_audio.playDirLeft(); break;
+            case Snake::Dir::Right: m_audio.playDirRight(); break;
+          }
+
           if (m_snake.wouldReverse(requested)) {
             startExplosion(cellCenterPx(m_snake.head()));
           } else {
@@ -326,6 +336,8 @@ void Game::update(float dtSec) {
   while (m_moveAccumulator >= stepEvery) {
     m_moveAccumulator -= stepEvery;
 
+    m_audio.playWalk();
+
     sf::Vector2i next = m_snake.head();
     switch (m_snake.nextDir()) {
       case Snake::Dir::Up: next.y -= 1; break;
@@ -394,7 +406,7 @@ void Game::render() {
   const sf::Color headCol(120, 255, 140);
   const sf::Color bodyCol(40, 200, 90);
   const auto& cells = m_snake.cells();
-  for (size_t i = 0; i < cells.size(); ++i) {
+  for (std::size_t i = 0; i < cells.size(); ++i) {
     const float t = cells.size() <= 1 ? 0.0f : static_cast<float>(i) / static_cast<float>(cells.size() - 1);
     m_snakeCircle.setFillColor(lerpColor(headCol, bodyCol, t));
     m_snakeCircle.setPosition(cellCenterPx(cells[i]));

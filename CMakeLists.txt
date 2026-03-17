@@ -22,12 +22,13 @@ add_executable(advanced_snake
   src/Random.cpp
   src/Button.cpp
   src/HighScoreStore.cpp
+  src/Audio.cpp
 )
 
 target_include_directories(advanced_snake PRIVATE include)
 
-find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
-target_link_libraries(advanced_snake PRIVATE sfml-graphics sfml-window sfml-system)
+find_package(SFML 2.5 COMPONENTS graphics window system audio REQUIRED)
+target_link_libraries(advanced_snake PRIVATE sfml-graphics sfml-window sfml-system sfml-audio)
 
 if (MSVC)
   target_compile_options(advanced_snake PRIVATE /W4)

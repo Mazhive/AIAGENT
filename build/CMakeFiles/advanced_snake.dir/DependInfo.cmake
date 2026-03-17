@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/ai-agent/ai-werkplaats/src/Audio.cpp" "CMakeFiles/advanced_snake.dir/src/Audio.cpp.o" "gcc" "CMakeFiles/advanced_snake.dir/src/Audio.cpp.o.d"
   "/home/ai-agent/ai-werkplaats/src/Button.cpp" "CMakeFiles/advanced_snake.dir/src/Button.cpp.o" "gcc" "CMakeFiles/advanced_snake.dir/src/Button.cpp.o.d"
   "/home/ai-agent/ai-werkplaats/src/Food.cpp" "CMakeFiles/advanced_snake.dir/src/Food.cpp.o" "gcc" "CMakeFiles/advanced_snake.dir/src/Food.cpp.o.d"
   "/home/ai-agent/ai-werkplaats/src/Game.cpp" "CMakeFiles/advanced_snake.dir/src/Game.cpp.o" "gcc" "CMakeFiles/advanced_snake.dir/src/Game.cpp.o.d"
