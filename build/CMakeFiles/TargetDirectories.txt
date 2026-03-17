@@ -1,0 +1,3 @@
+/home/ai-agent/ai-werkplaats/build/CMakeFiles/advanced_snake.dir
+/home/ai-agent/ai-werkplaats/build/CMakeFiles/edit_cache.dir
+/home/ai-agent/ai-werkplaats/build/CMakeFiles/rebuild_cache.dir
